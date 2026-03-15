@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBridge AI Chat</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="chat-page">
+
+        <div class="chat-container">
+
+            <div class="chat-header">
+                <h2>SkillBridge AI</h2>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+
+                <div class="message ai">
+                    <div class="message-bubble">
+                        👋 Welcome! I'm your SkillBridge AI.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="chat-input-container">
+
+                <div class="input-row">
+
+                    <input type="file" id="resumeUpload" accept=".pdf,.doc,.docx">
+
+                    <button id="uploadBtn">
+                        📄 Upload Resume
+                    </button>
+
+                    <textarea id="messageInput" placeholder="Enter job role..." rows="1"></textarea>
+
+                    <button id="sendBtn">
+                        Send
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/resumeUpload.js"></script>
+    <script src="js/chat.js"></script>
+
+</body>
+
+</html>

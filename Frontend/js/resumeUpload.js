@@ -12,6 +12,7 @@ uploadBtn.addEventListener("click", () => {
     resumeUpload.click();
 });
 
+
 resumeUpload.addEventListener("change", function () {
 
     const file = this.files[0];
@@ -28,7 +29,8 @@ resumeUpload.addEventListener("change", function () {
         return;
 
     }
+    uploadedResume = this.files[0];
 
-    addMessage("ai", `📄 Resume uploaded: ${file.name}`);
+    addMessage("ai", `📄 Resume uploaded: ${uploadedResume.name}`);
 
 });

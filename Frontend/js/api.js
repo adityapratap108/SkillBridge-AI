@@ -7,13 +7,13 @@ console.log("uploaded resume =>" ,  uploadedResume)
         const formData = new FormData();
         formData.append("message" , message);
         formData.append("resume" , uploadedResume);
-        res = await fetch(`http://localhost:5000/analyze`, {
+        res = await fetch(`https://skillbridge-ai-hvp3.onrender.com/analyze`, {
             method: "POST",
             body: formData,
         })
     }
     else{
-        res = await fetch(`http://localhost:5000/analyze`, {
+        res = await fetch(`https://skillbridge-ai-hvp3.onrender.com/analyze`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

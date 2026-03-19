@@ -4,7 +4,12 @@ const cors = require('cors');
 const analyzeRoute = require('./routes/analyze');
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://skillbridge-ai-0np7.onrender.com'
+  ]
+}));
 app.use(express.json());
 
 app.use('/analyze' , analyzeRoute);

@@ -32,6 +32,10 @@ Important rules:
 - candidateSkills must list every skill found in the resume
 - If no resume is provided set candidateSkills to []
 - Keep your language encouraging, practical and concise.
+- verify that the link is valid and relevant to the skill before including it as a resource.
+- make sure the link is not expired or the url redirects to a trusted site.
+- First check the current skills of the candidate and then identify the most important skills required for the job role that are missing from the candidate's resume. Prioritize skill gaps based on their relevance to the job role and the current industry demand. Focus on providing a clear and actionable learning roadmap that addresses the most critical skill gaps first, while also considering the candidate's existing skills to ensure a personalized and effective development plan.
+- make sure the skill gap show next level skills that are not in candidateSkills but are in requiredSkills and are relevant to the job role. Prioritize skill gaps based on their relevance to the job role and the current industry demand. Focus on providing a clear and actionable learning roadmap that addresses the most critical skill gaps first, while also considering the candidate's existing skills to ensure a personalized and effective development plan.
 `.trim();
 
 async function analyzeWithClaude(jobRole, resumeText = "") {
